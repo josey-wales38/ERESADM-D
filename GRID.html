@@ -1,0 +1,45 @@
+<!doctype html>
+            
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>my index page</title>
+<style>
+  p {position:static
+  }
+.container {
+  display: grid; 
+  grid-template-columns: 1fr 400px 1fr 3fr 2fr; 
+  grid-template-rows: 100px 100px 100px 15px 100px; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "header header header header header"
+    ". hank . pam pam"
+    "j j j pam pam"
+    ". k k . ."
+    "footer footer footer footer footer"; 
+}
+.header { grid-area: header;  background-color:aqua; }
+.hank {grid-area:hank;  background-color:rebeccapurple; }
+.footer { grid-area: footer; }
+.pam {grid-area:pam;background-color:orange; border-radius:300px;
+display: flex;
+  justify-content: center;
+  align-items: center;}
+.k{grid-area:k;background-color:green; text-align:center;}
+.j{grid-area:j;background-color:chartreuse}
+</style>
+</head>
+            
+<body>
+  <div class="container">
+    <div class="header"><h1>Burn </h1></div>
+    <div class="footer"><p>fortunately there aren't any crabs in my sock drawer</p></div>
+    <div class="hank"><h1>Melt</h1></div>
+    <div class="pam">KNOT<p>Orange</p></div>
+    <div class="k">Feliz Navi Dad </div>
+    <div class="j"><h1>Freeze</h1></div>  
+
+  </div>
+</body>
+</html>
